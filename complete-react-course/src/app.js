@@ -1,11 +1,16 @@
-//jsx introoduced
+import './app.css';
+
+
 function App(){
     let mgs = "AWESOME";   //JS variable
     return (
     <div>
-        <h2>This is an MY FIRST component</h2>
+        <h1 className="myHeader">This is an MY FIRST component</h1>
 
-        <p>this is my first {mgs} paragraph</p>  {/* JS variable in JSX*/}
+        <p className="myParagraph">this is my first {mgs} paragraph</p>  {/* JS variable in JSX*/}
+
+        <input type="text"></input>
+
     </div>
     )
 }
