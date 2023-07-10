@@ -4,11 +4,12 @@ import Products from './components/Products';
 
 
 function App(){
-    let mgs = "AWESOME";   //JS variable
+   
     return (
-    <div>
-        <Products></Products>
-
+    <div className='row'>
+        <div className='col-lg-8 mx-auto'>
+            <Products></Products>
+        </div>
     </div>
     )
 }
