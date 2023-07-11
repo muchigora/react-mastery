@@ -5,7 +5,6 @@ function displayFormattedProductCount(){
     return productCount > 0 ? productCount : <h5>zero</h5>;
 }
 
-
 function Products(){
     return(
         <ul className="list-group shadow">
@@ -17,7 +16,7 @@ function Products(){
                         <div className="d-flex align-items-center justify-content-start mt-1">
                             <h6 className="font-weight-bold my-2">$120.00</h6>
                             <button className="btn btn-primary">-</button>
-                            <span>{displayFormattedProductCount()}</span>
+                            <span>{displayFormattedProductCount()}</span>  {/**JS expressions can be imedded inside curly braces in a SJX expression */}
                             <button className="btn btn-primary">+</button>
                         </div>
                     </div>
