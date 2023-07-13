@@ -1,4 +1,4 @@
-
+import Button from "./Button";
 
 let productCount = 0;
 let isAvailable = 'Available'; {/**If availble text background will be green otherwise it will be red */}
@@ -15,10 +15,10 @@ function ProductDetails(props){
     return(
         <div className="d-flex align-items-center justify-content-start mt-1">
             <h6 className="font-weight-bold my-2" style={{marginRight:20}}>{props.price}</h6>
-            <button className="btn btn-primary">-</button>
+            <Button>-</Button> {/**This button element is not a JSX element but the Button Component */}
             <span style={{padding:"0px 10px", fontSize: 10}}>{displayFormattedProductCount()}</span>  {/**JS expressions can be imedded inside curly braces in a SJX expression */}
-            <button className="btn btn-primary">+</button>
-            <span className={badgeClass}>{props.isAvailable ? "Available" : "Unavailable"}</span> {/**Adding CSS Classes dynamically */}
+            <Button>+</Button>
+            <span className={badgeClass}>{props.isAvailable ? "Available" : "Unavailable"}</span>
         </div>
     )
 }
