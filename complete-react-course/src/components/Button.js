@@ -1,15 +1,12 @@
 import React from 'react';
 
-//Adding Event Hnadlers
+//Adding Event Handlers
+
 
 function Button(props){
     return(
-        <button onClick={buttonClickEventHanler} className="btn btn-primary">{props.children}</button>
+        <button onClick={props.eventHandler} className="btn btn-primary">{props.children}</button>
     )
 }
 export default Button;
 
-//Helper Functions
-function buttonClickEventHanler(){
-    console.log('Button clicked');
-}
