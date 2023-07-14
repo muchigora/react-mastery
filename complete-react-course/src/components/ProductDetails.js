@@ -1,6 +1,18 @@
 import React, {useState}  from "react";
 import Button from "./Button";
 
+/**
+ * MORE NOTES
+ * useState() 
+ * Is a react hook 
+ * It register the state or value as a state of a component in which it is called 
+ * 
+ * Is being called in ProductDetail Component 
+ * Registers the value of productCount as 0, initial value
+ * As productCount changes, useState records the new state / value in updateState       
+ *  
+ */
+
 
 function ProductDetails(props){
 
